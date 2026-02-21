@@ -11,3 +11,4 @@
     -  fun obtenerArcosEntrada(v: T): List<T>
     -  fun tamano(): Int
     -  fun subgrafo(vertices: Collection<T>): Grafo<T>
+    

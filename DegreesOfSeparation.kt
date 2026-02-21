@@ -178,5 +178,3 @@ fun main(args: Array<String>) {
     val resultado = grafo.degreesOfSeparation(origen, destino)
     println(resultado)
 }
-
-
