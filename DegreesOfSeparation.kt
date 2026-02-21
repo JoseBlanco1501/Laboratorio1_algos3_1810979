@@ -84,7 +84,7 @@ class ListaAdyacenciaGrafo<T> : Grafo<T> {
      * @param fin vertice destino al cual se desea llegar
      * @return el grado de separacion entre ambos vertices, o -1 si no existe conexion
      */
-    fun gradosDeSeparacion(inicio: T, fin: T): Int {
+    fun degreesOfSeparation(inicio: T, fin: T): Int {
 
         if (inicio == fin) return 0
         if (!contiene(inicio) || !contiene(fin)) return -1
@@ -135,11 +135,6 @@ class ListaAdyacenciaGrafo<T> : Grafo<T> {
  *
  * El archivo debe contener pares de nombres separados por un espacio,
  *
- * Ejemplo de input.txt:
- * Carlos Juan
- * Juan Ana
- * Pedro Ana
- *
  * Uso esperado:
  *   java -jar DegreesOfSeparation.jar <persona1> <persona2>
  *
@@ -180,7 +175,7 @@ fun main(args: Array<String>) {
     }
 
     // Calculo del grado de separacion
-    val resultado = grafo.gradosDeSeparacion(origen, destino)
+    val resultado = grafo.degreesOfSeparation(origen, destino)
     println(resultado)
 }
 
